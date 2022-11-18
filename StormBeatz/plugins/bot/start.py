@@ -185,11 +185,6 @@ async def start_comm(client, message: Message, _):
                     f"{message.from_user.mention} has just started bot to check <code>VIDEO INFORMATION</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
                 )
     else:
-        try:
-            await app.resolve_peer(OWNER_ID[0])
-            OWNER = OWNER_ID[0]
-        except:
-            OWNER = None
         out = private_panel(_, app.username)
         if config.START_IMG_URL:
             try:
