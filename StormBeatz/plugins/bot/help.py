@@ -1,14 +1,15 @@
 #
-# Copyright (C) 2021-2022 by StormBeatz@Github, < https://github.com/StormBeatz >.
+# Copyright (C) 2022-2023 by StormBeatz@Github, < https://github.com/StormBeatz >.
 #
 # This file is part of < https://github.com/StormBeatz/StormBeatz > project,
 # and is released under the "GNU v3.0 License Agreement".
 # Please see < https://github.com/StormBeatz/StormBeatz/blob/master/LICENSE >
 #
 # All rights reserved.
+#
 
 
-from StormBeatz.plugins.StormBeatz.start import start_menu_group, start_menu_private
+from StormBeatz.plugins.StormBeatzTools.start import start_menu_group, start_menu_private
 from typing import Union
 
 from pyrogram import filters, types
@@ -47,6 +48,43 @@ async def helper_private(
     & ~filters.edited
     & ~BANNED_USERS
 )
+@app.on_callback_query(
+    filters.regex("settings_back_helper") & ~BANNED_USERS
+)
+async def helper_private(
+    client: app, update: Union[types.Message, types.CallbackQuery]
+):
+    is_callback = isinstance(update, types.CallbackQuery)
+    if is_callback:
+        try:
+            await update.answer()
+        except:
+            pass
+        chat_id = update.message.chat.id
+        language = await get_lang(chat_id)
+        _ = get_string(language)
+        keyboard = help_pannel(_, True)
+        if update.message.photo:
+            await update.message.delete()
+            await update.message.reply_text(
+                _["help_1"], reply_markup=keyboard
+            )
+        else:
+            await update.edit_message_text(
+                _["help_1"], reply_markup=keyboard
+            )
+    else:
+        chat_id = update.chat.id
+        if await is_commanddelete_on(update.chat.id):
+            try:
+                await update.delete()
+            except:
+                pass
+        language = await get_lang(chat_id)
+        _ = get_string(language)
+        keyboard = help_pannel(_)
+        await update.reply_text(_["help_1"], reply_markup=keyboard)
+        
 @LanguageStart
 async def help_com_group(client, message: Message, _):
     return await start_menu_group(message)
@@ -58,14 +96,14 @@ async def helper_cb(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
     cb = callback_data.split(None, 1)[1]
     keyboard = help_back_markup(_)
-    if cb == "hb5":
+    if cb == "hb13":
         if CallbackQuery.from_user.id not in SUDOERS:
             return await CallbackQuery.answer(
-                "Only for Sudo Users", show_alert=True
+                "Only for Sudo Users\n\n Fuck Of !!!", show_alert=True
             )
         else:
             await CallbackQuery.edit_message_text(
-                helpers.HELP_5, reply_markup=keyboard
+                helpers.HELP_14, reply_markup=keyboard
             )
             return await CallbackQuery.answer()
     try:
@@ -87,4 +125,48 @@ async def helper_cb(client, CallbackQuery, _):
     elif cb == "hb4":
         await CallbackQuery.edit_message_text(
             helpers.HELP_4, reply_markup=keyboard
+        )
+    elif cb == "hb5":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_6, reply_markup=keyboard
+        )
+    elif cb == "hb6":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_7, reply_markup=keyboard
+        )
+    elif cb == "hb7":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_8, reply_markup=keyboard
+        )
+    elif cb == "hb8":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_9, reply_markup=keyboard
+        )
+    elif cb == "hb9":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_10, reply_markup=keyboard
+        )
+    elif cb == "hb10":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_11, reply_markup=keyboard
+        )     
+    elif cb == "hb11":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_12, reply_markup=keyboard
+        )
+    elif cb == "hb12":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_13, reply_markup=keyboard
+        )
+    elif cb == "hb14":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_15, reply_markup=keyboard
+        )
+    elif cb == "hb15":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_16, reply_markup=keyboard
+        )
+    elif cb == "hb16":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_17, reply_markup=keyboard
         )
