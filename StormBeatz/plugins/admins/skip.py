@@ -158,7 +158,7 @@ async def skip(cli, message: Message, _, chat_id):
             photo=img,
             caption=_["stream_1"].format(
                     user, chat_id,
-                    f"https://t.me/{app.username}?start=info_{vidid}",
+                    f"https://t.me/{app.username}?start=info_{videoid}",
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
