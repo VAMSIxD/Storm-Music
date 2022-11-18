@@ -91,14 +91,9 @@ async def settings_back_markup(
     except:
         pass
     if CallbackQuery.message.chat.type == "private":
-        try:
-            await app.resolve_peer(OWNER_ID[0])
-            OWNER = OWNER_ID[0]
-        except:
-            OWNER = None
-        buttons = private_panel(_, app.username, OWNER)
+        buttons = private_panel(_, app.username)
         return await CallbackQuery.edit_message_text(
-            _["start_2"].format(MUSIC_BOT_NAME),
+            _["start_2"].format(CallbackQuery.from_user.mention, MUSIC_BOT_NAME),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
