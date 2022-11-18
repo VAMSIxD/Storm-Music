@@ -9,7 +9,7 @@
 #
 
 
-from StormBeatz.plugins.StormBeatzTools.start import start_menu_group, start_menu_private
+from StormBeatz.plugins.StormBeatz.start import start_menu_group, start_menu_private
 from typing import Union
 
 from pyrogram import filters, types
