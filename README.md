@@ -1,4 +1,4 @@
-<p align="center"><a href="https://t.me/TheXCodeTeam/"><img src="https://te.legra.ph/file/b6037e048a26ae7b7d586.jpg"></a></p>
+<p align="center"><a href="https://t.me/StormBeatzBot/"><img src="https://telegra.ph/file/d5b9b6007bfdce0de5ab5.jpg"></a></p>
 <p align="center">
     <br><b>StormBeatz Music is a telegram bot project that's allow you to play music on telegram voice chat group</b><br>
 </p>
