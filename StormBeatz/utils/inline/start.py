@@ -12,7 +12,6 @@ from pyrogram.types import InlineKeyboardButton
 
 def start_pannel(_):
     buttons = [
-    [   
         [
             InlineKeyboardButton(
                 text="📚 All Commands", callback_data="settings_back_helper"
