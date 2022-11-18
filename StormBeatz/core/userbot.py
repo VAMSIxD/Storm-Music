@@ -48,14 +48,14 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("AviaxOfficial")
-                await self.one.join_chat("AviaxSupport")                
+                await self.one.join_chat("StormUpdates")
+                await self.one.join_chat("StormSupportChat")                
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "Hey !! I Am Alive :)"
                 )
             except:
                 LOGGER(__name__).error(
@@ -73,19 +73,19 @@ class Userbot(Client):
             else:
                 self.one.name = get_me.first_name
             LOGGER(__name__).info(
-                f"Assistant Started as {self.one.name}"
+                f"Hey !! I Am Alive :) as {self.one.name}"
             )
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("AviaxOfficial")
-                await self.two.join_chat("AviaxSupport")
+                await self.two.join_chat("StormUpdates")
+                await self.two.join_chat("StormSupportChat")
             except:
                 pass
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "Hey !! I Am Alive :)"
                 )
             except:
                 LOGGER(__name__).error(
@@ -108,14 +108,14 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("AviaxOfficial")
-                await self.three.join_chat("AviaxSupport")
+                await self.three.join_chat("StormUpdates")
+                await self.three.join_chat("StormSupportChat")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "Hey !! I Am Alive :)"
                 )
             except:
                 LOGGER(__name__).error(
@@ -138,14 +138,14 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("AviaxOfficial")
-                await self.four.join_chat("AviaxSupport")
+                await self.four.join_chat("StormUpdates")
+                await self.four.join_chat("StormSupportChat")
             except:
                 pass
             assistants.append(4)
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "Hey !! I Am Alive :)"
                 )
             except:
                 LOGGER(__name__).error(
@@ -168,14 +168,14 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("AviaxOfficial")
-                await self.five.join_chat("AviaxSupport")
+                await self.five.join_chat("StormUpdates")
+                await self.five.join_chat("StormSupportChat")
             except:
                 pass
             assistants.append(5)
             try:
                 await self.five.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "Hey !! I Am Alive :)"
                 )
             except:
                 LOGGER(__name__).error(
