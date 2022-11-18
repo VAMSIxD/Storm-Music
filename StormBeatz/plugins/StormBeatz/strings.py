@@ -25,7 +25,7 @@ START_BUTTON_GROUP = InlineKeyboardMarkup(
     [   
         [
             InlineKeyboardButton(
-                text="📚 All Commands", callback_data="settings_back_helper
+                text="📚 All Commands", callback_data="settings_back_helper"
             ),
             InlineKeyboardButton(
                 text="Dev", url="https://t.me/Xd_Nitric"
