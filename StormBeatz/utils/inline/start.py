@@ -61,5 +61,10 @@ def private_panel(_, BOT_USERNAME):
                     text="🏳️‍🌈 Language", callback_data="LG"
                 )
         ],
+        [
+            InlineKeyboardButton(
+                text="🔗 Deploy your own bot", url="https://github.com/StormBeatz/StormBeatz"
+            )
+        ]
      ]
     return buttons
