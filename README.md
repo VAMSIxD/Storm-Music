@@ -1,110 +1,75 @@
-<img src="https://telegra.ph/file/7f06a0170136896d8bf46.jpg" align="right" width="200" height="200"/>
-
-<h3>⚠️ This repo is just a clone of <a href="https://github.com/TechShreyash/SiestaXMusic">SiestaXMusic</a>. All credits goes to devs of <a href="https://github.com/TechShreyash/SiestaXMusic/graphs/contributors">SiestaXMusic</a>.</h3>
-
-
-# AviaxMusic
-
-[AviaxMusic](https://github.com/TeamAviax/AviaxMusic) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
-
-* Youtube, Soundcloud, Apple Music, Spotify, Resso and Telegram Audios & Videos support.
-* Written from scratch, making it stable and less crashes.
-* Attractive thumbnails, fonts and images,  making experience more user-friendly and interactive.
-* Loop, Shuffle, Specific Skip, Playlists etc support
-* Global, Users, Chats Top 10 played tracks stats
-* Multi-Language support
+<p align="center"><a href="https://t.me/TheXCodeTeam/"><img src="https://te.legra.ph/file/b6037e048a26ae7b7d586.jpg"></a></p>
+<p align="center">
+    <br><b>StormBeatz Music is a telegram bot project that's allow you to play music on telegram voice chat group</b><br>
+</p>
+<p align="center">
+    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
+    <a href="https://github.com/StormBeatz/StormBeatz/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-red.svg?style=flat-square" /></a>
+    <a href="https://github.com/StormBeatz/StormBeatz"> <img src="https://img.shields.io/github/repo-size/StormBeatz/StormBeatz?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
+    <a href="https://github.com/StormBeatz/StormBeatz/commits/main"> <img src="https://img.shields.io/github/last-commit/StormBeatz/StormBeatz?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
+    <a href="https://github.com/StormBeatz/StormBeatz/issues"> <img src="https://img.shields.io/github/issues/StormBeatz/StormBeatz?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
+    <a href="https://github.com/StormBeatz/StormBeatz/network/members"> <img src="https://img.shields.io/github/forks/StormBeatz/StormBeatz?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
+    <a href="https://github.com/StormBeatz/StormBeatz/network/members"> <img src="https://img.shields.io/github/stars/StormBeatz/StormBeatz?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
+</p>
 
 
-# 🔗 An Overview
+<h3>Requirements 📝</h3>
 
-Here's a brief high-level overview of the AviaxMusic:
+- FFmpeg
+- NodeJS [nodesource.com](https://nodesource.com/)
+- Python 3.7 or higher
+- [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 
-This project is based on [Pyrogram](https://github.com/pyrogram) and [Py-Tgcalls](https://github.com/pytgcalls/pytgcalls) . Pyrogram is a modern, elegant and asynchronous MTProto API framework.
+### 🧪 Get `STRING_SESSION` from below:
 
-* For database, AviaxMusic uses the MongoDB to store data and keys. [MongoDB](https://www.mongodb.com/) is a document database with the scalability and flexibility that you want with the querying and indexing that you need.
-* Project uses the bs4 web scrapping for getting many platform details. [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) is a Python library for pulling data out of HTML and XML files.
-* The project uses the font [`Poppins`](../assets/font.ttf) as its main font for the thumbnails.
-* The projects uses attractive images and icons which you can get in [assets](../assets/) directory.
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@HEXOROP/eSportMusic) ``Pyrogram``
 
-For more information on the technologies that power the AviaxMusic, check out the [Docs](https://StormBeatz.gitbook.io/StormBeatz/).
+### 🎖 History
 
+[![Mentioned in Awesome Python](https://awesome.re/mentioned-badge.svg)](https://github.com/StormBeatz/StormBeatz)
 
+## Features 🔮
 
-# ⚡️ Getting Started
+- Thumbnail Support
+- Yt-dL Fix
+- Updated Plug-in
+- Super Fast Bot
+- No Lag Hang
+- Fast Download Song From Server
+- Program Updated
+- Smooth Player
 
-### Before deploying AviaxMusic , please have a look towards [all available config vars](../config/README.md) , also please check [all available commands](../strings/command.yml) of the project.
+## Commands 🛠
 
-> If you want to start working with AviaxMusic you can either fork or import repo .
-> The official [documentation site](https://StormBeatz.gitbook.io/StormBeatz/) contains a lot of information. The best place to start is from the deployment section.
-> If you'd like to talk to us, join us on our [Telegram Group](https://telegram.me/AviaxSupport)
+- `/play <song name>` - play song you requested
+- `/song <song name>` - download songs you want quickly
 
+#### Admins Only 👷‍♂️
+- `/pause` - pause song play
+- `/resume` - resume song play
+- `/skip` - play next song
+- `/end` - stop music play
 
-## 🖇 Prerequisites
+## Heroku Deployment 💜
+The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
 
-> In order to avoid conflicts in your project, you must have/installed
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TheFelliX/StormBeatzTestBot)
 
-- [Python3.9](https://www.python.org/downloads/release/python-390/)
-- [Telegram API Key](https://docs.pyrogram.org/intro/setup#api-keys)
-- [Telegram Bot Token](https://t.me/botfather)
-- [MongoDB URI](https://telegra.ph/How-To-get-Mongodb-URI-04-06)
-- [Pyrogram String Session](https://StormBeatz.gitbook.io/StormBeatz/deployment/string-session)
+## 🖇 okteto Deployment
 
-
-## 🖇 Generating Pyrogram String Session
-
-- Generate a Pyrogram String Session via [Replit](https://replit.com/@StormBeatz/StormBeatz-Music-String-Gen)
-
-- Generate a Pyrogram String Session via [Telegram String Generation Bot](https://t.me/StormBeatzStringBot)
-
-
-## 🖇 Heroku Deployment
-
-<h4>Click the button below to deploy AviaxMusic on Heroku!</h4>    
-<a href="https://dashboard.heroku.com/new?template=https://github.com/TeamAviax/AviaxMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
-
-> How to Deploy To Heroku? [Watch Tutorial](https://www.youtube.com/embed/NPTk-awGalY)
-
-> Click on buttons below to expand and  detailed explanation process. !
-    
-<details>
-    <summary><b> Detailed Heroku Depoyment Process » </b></summary>
-
-<img src="https://telegra.ph/file/672efa7b8160ed39c6e86.jpg" align="right" width="350" height="700"/>
-
-### 🚀 Deploy Process
-- Click on the deploy button above and login to your [heroku account](https://heroku.com/login) .
-- Fill your values there.
-- If you don't know how to get config vars : [Please refer here](../config/README.md)
-- Make sure you fill correct values.
-- Click on **Deploy** button.
-- Please wait till the app gets deployed on heroku. Deploying can take upto **2-3 mins**..
-- When your app is successfully deployed, click on **Manage App** button.
-
-
-### 🚀 Booting Process
-- Search for **Resources** Tab inside your app. ( Check Image for more details)
-- Click on the **Pencil Icon** under resources section.
-- Turn **on** the **switch** present there near pencil icon.
-- Congrats your Music Bot is now **Booting**.
-
-
-### 🚀 Checking Logs
-- After Turning on your booting .
-- Click on the **More Button** present at top right corner .
-- Click on the **View Logs** button from the drop down menu.
-- You check your logs there!
-- Click on save button there at bottom to save your logs and forward it to us on [@AviaxSupport](https://telegram.me/AviaxSupport) if you face any problem
-
-</details>
+<h4>Click the button below to deploy StormBeatz on Okteto!</h4>
+<a href="https://cloud.okteto.com/deploy?repository= https://github.com/StormBeatz/StormBeatz"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200""/></a>
 
 ## 🖇 VPS Deployment
 
-> Checkout [Docs](https://StormBeatz.gitbook.io/StormBeatz/deployment/local-hosting-or-vps) for Detailed Explanation on VPS Deploy
+> Checkout [Channel](https://t.me/TheXCodeTeam) for Detailed Explanation on VPS Deploy
 
 
 ```console
-StormBeatz@MacBook~ $ git clone https://github.com/TeamAviax/AviaxMusic
-StormBeatz@MacBook~ $ cd AviaxMusic
+StormBeatz@MacBook~ $ git clone https://github.com/StormBeatz/StormBeatz
+StormBeatz@MacBook~ $ cd StormBeatz
+StormBeatz@MacBook~ $ ls
+StormBeatz@MacBook~ $ pip3 install -U -r requirements.txt
 StormBeatz@MacBook~ $ sudo bash setup
 ```
 > Setup will install each and every requirement, nodejs and pip packages automatically. After successfull installation of requirements , setup will ask you to input your vars.
@@ -114,28 +79,16 @@ StormBeatz@MacBook~ $ sudo bash setup
 StormBeatz@MacBook~ $ bash start
 ```
 
-> Not Getting VPS Method? [Watch Tutorial](https://telegram.me/TheStormBeatz/2275)
+> Not Getting VPS Method? [Watch Tutorial](https://t.me/TheYukki/2275)
 
 
 <img src="https://telegra.ph/file/6b75b57da50ef1183fcdc.jpg" align="center">
+```
 
+### Special Credits 💖
+- [<𝗡𝗶𝘁𝗿𝗶𝗰'𝗫𝗱/>](https://github.com/StormBeatz): Dev
+- [𝗧𝗲𝗮𝗺 𝗫 𝗖𝗼𝗱𝗲](https://t.me/TheXCodeTeam) Our Bot Team
+- [𝗥𝗼𝗷𝗦𝗲𝗿𝗕𝗲𝘀𝘁](https://github.com/rojserbest) CallsMusic Developer
 
-## 🏷 Support
-
-Reach out to the maintainer at one of the following places:
-
-- [Updates Channel](https://telegram.me/AviaxOfficial)
-- [Support Group](https://telegram.me/AviaxSupport)
-
-## 🎗 Project assistance
-
-If you want to say **thank you** or/and support active development of AviaxMusic:
-
-- Add a [GitHub Star](https://github.com/TeamAviax/AviaxMusic) to the project.
-- Fork the Repo :)
-
-## 👨🏻‍💻 Authors & contributors
-
-The original setup of this repository is by [Team StormBeatz](https://github.com/StormBeatz).
-
-For a full list of all authors and contributors, see [the contributors page](https://github.com/StormBeatz/StormBeatz/contributors).
+### Support & Updates 🎑
+<a href="https://t.me/XCodeSupport"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/TheXCodeTeam"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
