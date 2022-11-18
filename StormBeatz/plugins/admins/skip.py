@@ -157,11 +157,11 @@ async def skip(cli, message: Message, _, chat_id):
         run = await message.reply_photo(
             photo=img,
             caption=_["stream_1"].format(
-                user,
-                f"https://t.me/{app.username}?start=info_{videoid}",
-            ),
-            reply_markup=InlineKeyboardMarkup(button),
-        )
+                    user_name, chat_id,
+                    f"https://t.me/{app.username}?start=info_{vidid}",
+                ),
+                reply_markup=InlineKeyboardMarkup(button),
+            )
         db[chat_id][0]["mystic"] = run
         db[chat_id][0]["markup"] = "stream"
         await mystic.delete()
@@ -215,8 +215,8 @@ async def skip(cli, message: Message, _, chat_id):
             run = await message.reply_photo(
                 photo=img,
                 caption=_["stream_1"].format(
-                    user,
-                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user_name, chat_id,
+                    f"https://t.me/{app.username}?start=info_{vidid}",
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
