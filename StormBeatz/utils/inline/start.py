@@ -7,17 +7,60 @@
 #
 # All rights reserved.
 
-from typing import Union
-
 from pyrogram.types import InlineKeyboardButton
-
-from config import GITHUB_REPO
-from StormBeatz import app
 
 
 def start_pannel(_):
-    return
+    buttons = [
+    [   
+        [
+            InlineKeyboardButton(
+                text="📚 All Commands", callback_data="settings_back_helper"
+            ),
+            InlineKeyboardButton(
+                text="Dev", url="https://t.me/Xd_Nitric"
+            ),                                   
+        ],
+        [
+            InlineKeyboardButton(
+                text="Updates", url="https://t.me/StormUpdates"
+            ),
+            InlineKeyboardButton(
+                text="Support", url="https://t.me/StormSupportChat"
+            ),                       
+        ],        
+        [
+            InlineKeyboardButton(
+                text="🔗 Deploy your own bot", url="https://github.com/StormBeatz/StormBeatz"
+            ),                                  
+        ]
+    ]
+    return buttons
 
 
-def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):   
-    return 
+def private_panel(_, BOT_USERNAME):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="Add me to your group ➕",
+                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="Help", callback_data="settings_back_helper"
+            ),
+        ],
+        [
+            InlineKeyboardButton(text="Updates", url=f"https://t.me/StormUpdates"),
+            InlineKeyboardButton(
+                text="Support", url=f"https://t.me/StormSupportChat"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                    text="🏳️‍🌈 Language", callback_data="LG"
+                )
+        ],
+     ]
+    return buttons
