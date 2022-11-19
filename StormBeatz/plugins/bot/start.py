@@ -53,7 +53,7 @@ async def start_comm(client, message: Message, _):
             return await message.reply_text(_["song_2"])
         if name[0:3] == "sta":
             m = await message.reply_text(
-                "🔎 Fetching your personal stats.!"
+                "🔎 Hold On !! Getting Your Personal stats.!"
             )
             stats = await get_userss(message.from_user.id)
             tot = len(stats)
@@ -129,7 +129,7 @@ async def start_comm(client, message: Message, _):
         if name[0:3] == "del":
             await del_plist_msg(client=client, message=message, _=_)
         if name[0:3] == "inf":
-            m = await message.reply_text("🔎 Fetching Info!")
+            m = await message.reply_text("🔎 Hold On..Let Me Find !")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -145,23 +145,23 @@ async def start_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**Video Track Information**__
+🔍__**Stream Detail's**__
 
-❇️**Title:** {title}
+❇️**Stream Name :** {title}
 
-⏳**Duration:** {duration} Mins
-👀**Views:** `{views}`
-⏰**Published Time:** {published}
-🎥**Channel Name:** {channel}
-📎**Channel Link:** [Visit From Here]({channellink})
-🔗**Video Link:** [Link]({link})
+⏳**Stream Duration:** {duration} Mins
+👀**Stream Views:** `{views}`
+⏰**Stream Published On:** {published}
+🎥**Stream Channel:** {channel}
+📎**Stream Channel Link:** [Visit From Here]({channellink})
+🔗**Stream MP4 Link:** [Link]({link})
 
-⚡️ __Searched Powered By {config.MUSIC_BOT_NAME}__"""
+⚡️ __Powered By {config.MUSIC_BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="🎥 Watch ", url=f"{link}"
+                            text="🎥 Watch On Youtube", url=f"{link}"
                         ),
                         InlineKeyboardButton(
                             text="🔄 Close", callback_data="close"
