@@ -29,7 +29,7 @@ HELP_COMMAND = get_command("HELP_COMMAND")
 
 
 @app.on_message(
-    filters.command(HELP_COMMAND) & filters.private & ~filters.edited & ~BANNED_USERS
+    filters.command("help") & filters.private & ~filters.edited & ~BANNED_USERS
 )
 @app.on_callback_query(filters.regex("settings_back_helper") & ~BANNED_USERS)
 async def helper_private(client: app, update: Union[types.Message, types.CallbackQuery]):
@@ -60,7 +60,7 @@ async def helper_private(client: app, update: Union[types.Message, types.Callbac
                 pass
         language = await get_lang(chat_id)
         _ = get_string(language)
-        keyboard = help_pannel(_)
+        keyboard = help_pannel(_, True)
         await update.reply_text(_["help_1"], reply_markup=keyboard)
 
 
