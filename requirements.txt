@@ -7,9 +7,9 @@ gitpython
 hachoir
 heroku3
 lyricsgenius
-motor
+motor==3.0.0
 numpy
-pillow
+pillow==9.5.0
 psutil
 py-tgcalls==0.8.6
 pykeyboard
@@ -23,4 +23,4 @@ tgcrypto
 wget
 youtube-search
 youtube-search-python
-yt-dlp
+git+https://github.com/yt-dlp/yt-dlp.git
