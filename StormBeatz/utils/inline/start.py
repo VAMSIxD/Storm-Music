@@ -17,20 +17,20 @@ def start_pannel(_):
                 text="📚 All Commands", callback_data="settings_back_helper"
             ),
             InlineKeyboardButton(
-                text="Dev", url="https://t.me/Xd_Nitric"
+                text="Dev", url="https://t.me/ItsChinnoda"
             ),                                   
         ],
         [
             InlineKeyboardButton(
-                text="Updates", url="https://t.me/StormUpdates"
+                text="DKNF", url="https://t.me/Dark_night_logs"
             ),
             InlineKeyboardButton(
-                text="Support", url="https://t.me/StormSupportChat"
+                text="TFTC Group", url="https://t.me/Telugu_family_Ties_chatting"
             ),                       
         ],        
         [
             InlineKeyboardButton(
-                text="🔗 Deploy your own bot", url="https://github.com/StormBeatz/StormBeatz"
+                text="Chinna", url="https://t.me/ItsChinnoda"
             ),                                  
         ]
     ]
@@ -51,9 +51,9 @@ def private_panel(_, BOT_USERNAME):
             ),
         ],
         [
-            InlineKeyboardButton(text="Updates", url=f"https://t.me/StormUpdates"),
+            InlineKeyboardButton(text="DKNF", url=https://t.me/Dark_night_logs""),
             InlineKeyboardButton(
-                text="Support", url=f"https://t.me/StormSupportChat"
+                text="TFTC Group", url=f"https://t.me/Telugu_family_Ties_chatting"
             ),
         ],
         [
@@ -63,7 +63,7 @@ def private_panel(_, BOT_USERNAME):
         ],
         [
             InlineKeyboardButton(
-                text="🔗 Deploy your own bot", url="https://github.com/StormBeatz/StormBeatz"
+                text="Chinna", url="https://t.me/ItsChinnoda"
             )
         ]
      ]
