@@ -51,7 +51,7 @@ def private_panel(_, BOT_USERNAME):
             ),
         ],
         [
-            InlineKeyboardButton(text="DKNF", url=https://t.me/Dark_night_logs""),
+            InlineKeyboardButton(text="DKNF", url="https://t.me/Dark_night_logs""),
             InlineKeyboardButton(
                 text="TFTC Group", url=f"https://t.me/Telugu_family_Ties_chatting"
             ),
